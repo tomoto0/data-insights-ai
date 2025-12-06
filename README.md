@@ -77,26 +77,26 @@ A comprehensive, AI-driven data analysis platform that transforms raw CSV data i
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Frontend (React 19)                      │
-│  ┌──────────────────────────────────────────────────────┐  　　│
-│  │  Home Page (Upload & Analysis)                       │ 　　 │
-│  │  - CSV Upload Dialog                                 │  　　│
-│  │  - Recent Datasets List                              │  　　│
-│  │  - Analysis Results View                             │  　　│
-│  │  - Data Cleaning Interface                           │  　　│
-│  └──────────────────────────────────────────────────────┘ 　　 │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │  Home Page (Upload & Analysis)                       │   │
+│  │  - CSV Upload Dialog                                 │   │
+│  │  - Recent Datasets List                  　           │ 　│
+│  │  - Analysis Results View                　            │ 　│
+│  │  - Data Cleaning Interface      　           　       │ 　│
+│  └──────────────────────────────────────────────────────┘   │
 └────────────────────────┬────────────────────────────────────┘
                          │ tRPC Calls
                          ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                   Backend (Express + tRPC)                  │
-│  ┌──────────────────────────────────────────────────────┐  　　│
-│  │  tRPC Routers                                        │ 　　 │
-│  │  ├─ csv.upload: Upload and parse CSV files         　　 │  　　│
-│  │  ├─ csv.list: Retrieve stored datasets              　　│  　　│
-│  │  ├─ insights.generate: Generate AI insights         　　│  　　│
-│  │  ├─ insights.list: Retrieve cached insights         　　│  　　│
-│  │  └─ cleaning.clean: AI-powered data cleaning        　　│  　　│
-│  └──────────────────────────────────────────────────────┘  　　│
+│  ┌──────────────────────────────────────────────────────┐ 　│
+│  │  tRPC Routers                                        │　 │
+│  │  ├─ csv.upload: Upload and parse CSV files         　│ 　 │
+│  │  ├─ csv.list: Retrieve stored datasets            　　│ 　│
+│  │  ├─ insights.generate: Generate AI insights       　　│ 　│
+│  │  ├─ insights.list: Retrieve cached insights       　　│　 │
+│  │  └─ cleaning.clean: AI-powered data cleaning      　　│　 │
+│  └──────────────────────────────────────────────────────┘ 　│
 └────────────────────────┬────────────────────────────────────┘
                          │
         ┌────────────────┼────────────────┐
